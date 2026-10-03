@@ -1,4 +1,4 @@
-# SmartForm CLI â€” inspect and test form submissions from your terminal
+# SmartForm CLI â€?inspect and test form submissions from your terminal
 
 Tiny command-line helper to inspect and test your SmartForm AI forms from the terminal.
 
@@ -20,7 +20,7 @@ not pollute the submissions table.
 ## Install
 
 ```bash
-git clone https://github.com/yanghuai123456/smartform-cli.git
+git clone https://github.com/smartformai/smartform-cli.git
 cd smartform-cli
 npm install
 npm link          # so `smartform-cli` is on your PATH
@@ -78,7 +78,7 @@ Both `verify` and `submit` print the JSON response to stdout. Non-2xx exits 1.
 
 ## How the API works
 
-- `POST {endpoint}/api/v1/f/{form_id}` â€” JSON or form-data, no API key.
+- `POST {endpoint}/api/v1/f/{form_id}` â€?JSON or form-data, no API key.
 - Honeypot: set `_gotcha` to a non-empty value to simulate a bot (submissions are
   silently discarded).
 
@@ -91,7 +91,7 @@ For the full contract, see https://usesmartform.com/docs.
 
 Yes. AI spam filtering is enabled by default on every plan. AI intent
 classification and high-value lead detection require a paid plan (Pro
-or Business) â€” the dashboard enforces this and returns HTTP 402 if
+or Business) â€?the dashboard enforces this and returns HTTP 402 if
 you try to enable them on a free workspace.
 
 ### Do I need an API key?
@@ -104,7 +104,7 @@ form ID, which is non-enumerable. The example also includes a hidden
 No. The CLI works against any form ID you provide. Useful for smoke-testing forms you already have access to without opening the dashboard.
 
 ## Related examples
-[smartform-js SDK](https://github.com/yanghuai123456/smartform-js) | [Astro contact form](https://github.com/yanghuai123456/smartform-example-astro) | [Next.js contact form](https://github.com/yanghuai123456/smartform-example-nextjs)
+[smartform-js SDK](https://github.com/smartformai/smartform-js) | [Astro contact form](https://github.com/smartformai/smartform-example-astro) | [Next.js contact form](https://github.com/smartformai/smartform-example-nextjs)
 
 
 ## License
